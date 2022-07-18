@@ -1,5 +1,47 @@
+.BETA{
+    background-image: linear-gradient(to right, rgba(137, 137, 249, 0.745), rgba(78, 234, 117, 0.467));
+}
+
+
+
+.H{
+     text-align: center
+     
+}
+
+.FORM{
+    align-self: center;
+    width: 500px;
+    color: powderblue;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(120, 108, 107, 0.67);
+    padding: 30px 150px 30px 150px ;
+    margin: 60px;
+    border: 5px solid black;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+#Space{
+    padding: 5px;
+}
+
+
+#TPP{
+    color: rgb(35, 45, 47);
+}
+
 #Total{
+    padding-left: 13px;
+    padding-top: 3px;
+    border-radius: 30px;
+    background-color: aliceblue;
     width: 300px;
-    height: 1.5em;
+    height: 2em;
     border: 1px solid grey;
 }
+
