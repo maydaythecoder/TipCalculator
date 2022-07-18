@@ -1,5 +1,6 @@
-let billAmountElement = document.querySelector("#BillAmount");
-let numGuestsElement = document.querySelector("#NumberOfGuests");
+
+let billAmountElement = document.querySelector("#billAmount");
+let numGuestsElement = document.querySelector("#numberOfGuests");
 let serviceQualElement = document.getElementById("service");
 let div = document.getElementById('Total');
 let button = document.querySelector('button');
@@ -12,6 +13,6 @@ function total(){
     console.log(billTotal);
 
     div.innerText= billTotal.toFixed(2);
-} 
+}
 
 button.addEventListener('click', total);
