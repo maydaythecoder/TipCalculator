@@ -7,39 +7,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>tip calculator</h1>
+  <body class="BETA">
+    <h1 class="H">Tip Calculator</h1>
 
 
 
-    <form>
+    <div class="FORM">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Bill Total</label>
+        <label for="exampleInputEmail1" class="form-label">Bill Total ($):</label>
         <input type="number" step=".01"
-        min="0" class="form-control" id="BillAmmount" aria-describedby="emailHelp">
+        min="0" class="form-control" id="BillAmount" aria-describedby="emailHelp">
 
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Number of guests</label>
+        <label for="exampleInputPassword1" class="form-label">Number of guests:</label>
         <input type="number" min="1" class="form-control" id="NumberOfGuests">
       </div>
 
 
 
       <select id="service">
-        <option selected disabled hidden>Service</option>
+        <option selected disabled hidden>Quality of Service</option>
         <option value="0.25">25% - Top Notch</option>
         <option value="0.20">20% - Excellent</option>
         <option value="0.15">15% - Good</option>
         <option value="0.10">10% - Bad</option>
         <option value="0.05">5% - Worst</option>
     </select>
-
       <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+      <button type="button" class="btn btn-primary">Submit</button>
+    <br>
+  </div>
+    <div class="container">
+      <label>Each Person Pays:</label>
+      <div id="Total"></div>
+    </div>
 
-    <div id="Total"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="tip.js"></script>
   </body>
